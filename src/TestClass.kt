@@ -1,10 +1,18 @@
-fun main(){
-    var recordA=Log("John",0)
-    var name=recordA.name
-    name="Steven"
-    println(recordA.name)
+package testclass
+
+fun printout(cont:String){
+        print(cont)
+}
+open class Log(name: String,number:Int){
+    var name: String=name
+    var number:Int=number
+    constructor(name: String):this(name,0)
+    init {
+        this.name="Steve"
+    }
+
 }
 
-class Log(var name:String,var number:Int){
+class Record(var itemnumber:Int,name: String,number: Int) :Log(name,number){
 
 }
